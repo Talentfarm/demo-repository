@@ -10,8 +10,7 @@ import ViewInsurance from "./pages/ViewInsurance";
 import ActivatePolicy from "./pages/ActivatePolicy";
 import LiveMonitoring from "./pages/LiveMonitoring";
 import ClaimPayout from "./pages/ClaimPayout";
-import AdminPanel from "./pages/AdminPanel"; // ✅ Step 1: Import
-
+import AdminPanel from "./pages/AdminPanel"; 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -109,7 +108,7 @@ export default function App() {
             <StyledNavLink to="/">Home</StyledNavLink>
           </NavItem>
 
-          {/* ✅ Step 2: Admin Panel Link Added */}
+         
           <NavItem>
             <StyledNavLink to="/admin">Admin Panel</StyledNavLink>
           </NavItem>
@@ -153,7 +152,7 @@ export default function App() {
           <Route path="/activate-policy" element={<ActivatePolicy />} />
           <Route path="/live-monitoring" element={<LiveMonitoring />} />
           <Route path="/claim-payout" element={<ClaimPayout />} />
-          <Route path="/admin" element={<AdminPanel />} /> {/* ✅ Step 3: Route Added */}
+          <Route path="/admin" element={<AdminPanel />} />
         </Routes>
       </main>
     </>
