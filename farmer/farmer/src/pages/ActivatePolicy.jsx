@@ -15,7 +15,7 @@ export default function ActivatePolicy() {
   function handleSubmit(e) {
     e.preventDefault();
     alert(`Policy Activated for ${form.farmerName}!`);
-    // You can connect to backend API here
+   
   }
 
   return (
