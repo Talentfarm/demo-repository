@@ -2,7 +2,7 @@
 
 A comprehensive decentralized application for **crop insurance management**, built with **React.js**, **Node.js**, **Ethereum smart contracts**, and **weather simulation** for automated payouts in the Guntur region.  
 
----
+
 
 ## 🏗️ Project Architecture  
 
@@ -12,11 +12,8 @@ crop-insurance-dapp/
 ├── smart-contract/ # Solidity contracts + Truffle
 └── README.md
 
-yaml
-Copy
-Edit
 
----
+
 
 ## ✨ Features  
 
@@ -33,16 +30,16 @@ Edit
 - ⚡ **Smart Contract Integration** – Ethereum blockchain for secure, transparent transactions  
 - 💰 **Automated Payouts** – Weather-triggered payouts based on crop thresholds  
 
----
+
 
 ## 🛠️ Technology Stack  
 
 **Frontend:** React.js, React Router, CSS, Ethers.js  
-**Backend:** Node.js, Express.js, MongoDB, Sequelize ORM  
+**Backend:** Node.js, Express.js 
 **Blockchain:** Solidity, Truffle, Ganache  
-**Database:** Microsoft SQL Server Management Studio  
+**Database:** MongoDB
 
----
+
 
 ## 📋 Prerequisites  
 
@@ -53,14 +50,14 @@ Ensure you have installed:
 - Truffle framework  
 - Git  
 
----
+
 
 ## 🚀 Getting Started  
 
 ### 1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/Talentfarm/demo-repository
-cd crop-insurance-dapp
+cd crop-insurance-app
 2️⃣ Database Setup (MongoDB)
 Open MongoDB
 
@@ -70,8 +67,7 @@ Create collections: users, farmer, policies
 
 3️⃣ Smart Contract Deployment
 bash
-Copy
-Edit
+
 cd smart-contract
 npm install
 truffle compile && truffle migrate --reset
@@ -85,38 +81,29 @@ cd ../backend
 npm install
 Create a .env file:
 
-ini
-Copy
-Edit
-DATABASE_URL=your_sql_server_connection_string
+
+
+DATABASE_URL=your_mongodb_connection_string
 CONTRACT_ADDRESS=your_deployed_contract_address_from_ganache
 GANACHE_RPC_URL=http://127.0.0.1:7545
 JWT_SECRET=your_jwt_secret_key
 Start the backend server:
 
-bash
-Copy
-Edit
+
 npm start
 Backend runs at: http://localhost:5000
 
 5️⃣ Frontend Setup
-bash
-Copy
-Edit
+
 cd ../frontend
 npm install
 Create a .env file:
 
-bash
-Copy
-Edit
+
 REACT_APP_API_BASE=http://localhost:5000/api
 Start the frontend server:
 
-bash
-Copy
-Edit
+
 npm start
 Frontend runs at: http://localhost:3000
 
