@@ -7,10 +7,11 @@ A comprehensive decentralized application for **crop insurance management**, bui
 ## 🏗️ Project Architecture  
 
 crop-insurance-dapp/
-├── frontend/ # React.js user interface
-├── backend/ # Node.js API server
-├── smart-contract/ # Solidity contracts + Truffle
+├── frontend/              # React.js user interface
+├── backend/               # Node.js API server  
+├── smart-contract/        # Solidity contracts + Truffle
 └── README.md
+
 
 
 
