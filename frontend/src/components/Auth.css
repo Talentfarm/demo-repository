@@ -1,0 +1,91 @@
+/* Center wrapper */
+.auth-wrapper {
+  min-height: 100vh;       /* full viewport height */
+  width: 100%;
+  background: linear-gradient(120deg, #e0f7fa, #e4aa63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Make header translucent/transparent on Auth page */
+.app-header {
+  background: transparent;
+  box-shadow: none;
+  position: relative;
+  z-index: 10;
+}
+
+/* Card style */
+.auth-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.auth-card h2 {
+  color: #00796b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Form fields */
+.auth-form input {
+  width: 95%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.auth-form input:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 4px #80cbc4;
+}
+
+/* Buttons */
+.primary-btn {
+  background: #00796b;
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+  background: #004d40;
+}
+
+/* Error text */
+.error-text {
+  background: #ffe5e5;
+  color: #e53935;
+  padding: 8px 8px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Toggle link */
+.toggle-text {
+  color: #00796b;
+  margin-top: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.toggle-text:hover {
+  color: #004d40;
+}
